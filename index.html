@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif Terpisah</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Kuis Interaktif Modern</h1>
+        
+        <form id="quizForm">
+            <!-- Pertanyaan 1 -->
+            <div class="question">1. Apa ibukota negara Jepang?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="salah"> Seoul</label></li>
+                <li><label><input type="radio" name="q1" value="benar"> Tokyo</label></li>
+                <li><label><input type="radio" name="q1" value="salah"> Beijing</label></li>
+            </ul>
+
+            <!-- Pertanyaan 2 -->
+            <div class="question">2. Bahasa pemrograman apa yang digunakan untuk membuat struktur halaman web?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="benar"> HTML</label></li>
+                <li><label><input type="radio" name="q2" value="salah"> CSS</label></li>
+                <li><label><input type="radio" name="q2" value="salah"> Python</label></li>
+            </ul>
+
+            <!-- Pertanyaan 3 -->
+            <div class="question">3. Planet apa yang dijuluki sebagai Planet Merah?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q3" value="salah"> Venus</label></li>
+                <li><label><input type="radio" name="q3" value="salah"> Jupiter</label></li>
+                <li><label><input type="radio" name="q3" value="benar"> Mars</label></li>
+            </ul>
+
+            <button type="button" class="btn" onclick="hitungSkor()">Lihat Hasil</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
